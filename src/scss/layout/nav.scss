@@ -1,0 +1,41 @@
+.navbar {
+    .nav-trigger {
+        z-index: 3;
+    }
+    a {
+        color: $font-color;
+        text-decoration: none;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        transform: translateX(100vw);
+        background-color: $color-primary;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+        a {
+            padding: 20px;
+            margin: 5px 0;
+        }
+        &.active {
+            transform: unset;
+            opacity: 1;
+        }
+        @media (min-width: 992px) {
+            position: relative;
+            height: unset;
+            width: unset;
+            opacity: 1;
+            margin: 0 20px;
+            padding: 10px;
+            transform: unset;
+            flex-direction: row;
+            background-color: unset;
+        }
+    }
+}
