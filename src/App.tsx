@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 
-function App() {
+const App = () => {
   const [count, setCount] = useState(0)
 
   return (
@@ -30,4 +30,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

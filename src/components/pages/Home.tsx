@@ -1,6 +1,6 @@
 import './home.scss'
 
-export default function Home() {
+const Home = () => {
     const title = 'Welcome to react notes';
     const likes = 50;
     const person = {name: 'yoshi', color: 'green'}
@@ -15,3 +15,5 @@ export default function Home() {
         </div>
     )
 }
+
+export default Home;
