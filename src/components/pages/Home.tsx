@@ -1,3 +1,5 @@
+import './home.scss'
+
 export default function Home() {
     const title = 'Welcome to react notes';
     const likes = 50;
